@@ -1,4 +1,3 @@
-"""
 from setuptools import setup, find_packages
 
 setup(
@@ -10,7 +9,12 @@ setup(
         'pandas',
         'nltk',
         'pdfminer.six',
-        'docx'
+        'docx',
+        'ttkbootstrap',  # Adicionado
+        'tkinter',        # Adicionado (não necessário no pip, mas incluído por clareza)
+        'spacy',          # Adicionado
+        'gender-guesser', # Adicionado
+        'csv'             # OBS: O `csv` já faz parte do Python padrão, não precisa ser instalado
     ],
     entry_points={
         'console_scripts': [
@@ -18,4 +22,3 @@ setup(
         ]
     },
 )
-"""
