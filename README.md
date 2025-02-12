@@ -1,4 +1,3 @@
-"""
 # SATA - Sistema de Análise de Textos Acadêmicos
 
 O **SATA** - Sistema de Análise de Textos Acadêmicos é uma ferramenta desenvolvida para auxiliar pesquisadores, professores e estudantes na análise de conteúdo (entrevistas, notícias, etc.). Ele utiliza técnicas avançadas de processamento de linguagem natural para identificar padrões linguísticos, analisar a estrutura textual, verificar a coerência argumentativa e destacar elementos relevantes como citações e referências.
@@ -18,4 +17,4 @@ pip install -r requirements.txt
 ```bash
 python src/main.py
 ```
-"""
+
