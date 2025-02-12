@@ -1,0 +1,1 @@
+from .main import carregar_texto, analisar_texto

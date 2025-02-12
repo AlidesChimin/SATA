@@ -1,0 +1,7 @@
+"""
+numpy
+pandas
+nltk
+pdfminer.six
+docx
+"""
