@@ -1,7 +1,7 @@
 """
 # SATA - Sistema de Análise de Textos Acadêmicos
 
-O **SATA** é um sistema desenvolvido para a análise de textos acadêmicos, utilizando técnicas de análise de conteúdo baseadas na metodologia de **Laurence Bardin**.
+O **SATA** - Sistema de Análise de Textos Acadêmicos é uma ferramenta desenvolvida para auxiliar pesquisadores, professores e estudantes na análise de conteúdo (entrevistas, notícias, etc.). Ele utiliza técnicas avançadas de processamento de linguagem natural para identificar padrões linguísticos, analisar a estrutura textual, verificar a coerência argumentativa e destacar elementos relevantes como citações e referências.
 
 ## Funcionalidades
 - Análise de frequência de palavras-chave
