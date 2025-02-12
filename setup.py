@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='sata',
+    name='SATA',
     version='1.0.0',
     packages=find_packages(),
     install_requires=[
@@ -10,11 +10,10 @@ setup(
         'nltk',
         'pdfminer.six',
         'docx',
-        'ttkbootstrap',  # Adicionado
-        'tkinter',        # Adicionado (não necessário no pip, mas incluído por clareza)
-        'spacy',          # Adicionado
-        'gender-guesser', # Adicionado
-        'csv'             # OBS: O `csv` já faz parte do Python padrão, não precisa ser instalado
+        'ttkbootstrap',
+        'spacy',
+        'gender-guesser',
+        'Pillow'
     ],
     entry_points={
         'console_scripts': [
