@@ -6,3 +6,4 @@ docx
 ttkbootstrap
 spacy
 gender-guesser
+Pillow
