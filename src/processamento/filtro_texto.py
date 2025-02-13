@@ -29,4 +29,3 @@ def filtrar_texto(janela_pai):
                 messagebox.showinfo("Sucesso", "O arquivo foi processado e salvo com sucesso.", parent=janela_pai)
         except Exception as e:
             messagebox.showerror("Erro", f"Ocorreu um erro: {e}", parent=janela_pai)
-

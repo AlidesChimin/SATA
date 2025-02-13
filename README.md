@@ -3,10 +3,10 @@
 O **SATA** - Sistema de Análise de Textos Acadêmicos é uma ferramenta desenvolvida para auxiliar pesquisadores, professores e estudantes na análise de conteúdo (entrevistas, notícias, etc.). Ele utiliza técnicas avançadas de processamento de linguagem natural para identificar padrões linguísticos, analisar a estrutura textual, verificar a coerência argumentativa e destacar elementos relevantes como citações e referências.
 
 ## Funcionalidades
-- Análise de frequência de palavras-chave
-- Geração de estatísticas sobre padrões textuais
-- Identificação de conceitos e categorias recorrentes
-- Suporte para diversos formatos de arquivos (PDF, DOCX, TXT)
+- Análise Estrutural: Identificação da organização de parágrafos, seções e estrutura geral do texto.
+- Avaliação de Coesão e Coerência: Verificação de padrões linguísticos e consistência dos argumentos.
+- Extração de Citações e Referências: Organização automática de fontes e citações para facilitar a revisão.
+- Feedback Automatizado: Sugestões para aprimorar a qualidade e a clareza dos trabalhos acadêmicos.
 
 ## Instalação
 ```bash
@@ -17,4 +17,3 @@ pip install -r requirements.txt
 ```bash
 python src/main.py
 ```
-

@@ -6,4 +6,6 @@ docx
 ttkbootstrap
 spacy
 gender-guesser
-Pillow
+pillow
+wordcloud
+textblob

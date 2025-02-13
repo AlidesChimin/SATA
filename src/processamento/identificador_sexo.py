@@ -27,4 +27,3 @@ def identificador_sexo(janela_pai):
                 messagebox.showinfo("Sucesso", f"Arquivo salvo com sucesso em:\n{arquivo_saida}", parent=janela_pai)
         except Exception as e:
             messagebox.showerror("Erro", f"Ocorreu um erro ao processar o arquivo: {e}", parent=janela_pai)
-
