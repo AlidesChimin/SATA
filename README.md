@@ -17,3 +17,4 @@ pip install -r requirements.txt
 ```bash
 python src/main.py
 ```
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14868064.svg)](https://zenodo.org/records/14868064)
