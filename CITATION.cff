@@ -1,7 +1,16 @@
 cff-version: 1.2.0
 title: "SATA - Sistema de Análise de Textos Acadêmicos"
+version: "1.0.0"  
 authors:
   - name: "Alides Baptista Chimin Junior"
     affiliation: "Universidade Estadual do Centro-Oeste (UNICENTRO)"
+    orcid: "0000-0002-7436-390X" 
 doi: "10.5281/zenodo.14868064"
 date-released: "2025-02-13"
+license: "GPL-3.0"
+repository-code: "https://github.com/AlidesChimin/SATA"  
+keywords:
+  - NLP
+  - Text Analysis
+  - Computational Linguistics
+  - Academic Writing
