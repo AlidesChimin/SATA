@@ -156,4 +156,3 @@ class SATA_GUI:
             botao = ttk.Button(frame_botoes,
                                text
 ::contentReference[oaicite:0]{index=0}
- 
