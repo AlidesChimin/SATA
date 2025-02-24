@@ -19,7 +19,7 @@ except ImportError:
     ImageTk = None
 
 # Classe para criar tooltips (exibições de explicação quando o mouse passa sobre um widget)
-class CreateToolTip(object):
+class CreateToolTip:
     """
     Cria um tooltip para um widget.
     Exibe a mensagem após 500 ms de espera quando o mouse entra e a esconde quando sai.
@@ -68,10 +68,10 @@ class CreateToolTip(object):
             tw.destroy()
 
 class SATA_GUI:
-    def __init__(self):
-        self.janela_principal = ttk.Window(themename="darkly")
-        self.janela_principal.title("Sistema de Análise de Textos Acadêmico - SATA")
-        self.janela_principal.geometry("600x700")
+    def __init__(self, master=None):
+        self.master = master or ttk.Window(themename="darkly")
+        self.master.title("Sistema de Análise de Textos Acadêmico - SATA")
+        self.master.geometry("600x700")
         self.create_widgets()
 
     def load_image(self, relative_path, size):
@@ -94,7 +94,7 @@ class SATA_GUI:
 
     def create_widgets(self):
         # --- FRAME DE INTRODUÇÃO ---
-        frame_intro = ttk.Frame(self.janela_principal, padding=10)
+        frame_intro = ttk.Frame(self.master, padding=10)
         frame_intro.grid(row=0, column=0, padx=10, pady=10, sticky="ew")
         # Título centralizado
         titulo = ttk.Label(frame_intro,
@@ -120,32 +120,32 @@ class SATA_GUI:
             label_logo.pack(side="right", padx=10)
 
         # --- FRAME DOS BOTÕES DE FUNÇÃO ---
-        frame_botoes = ttk.Frame(self.janela_principal, padding=10)
+        frame_botoes = ttk.Frame(self.master, padding=10)
         frame_botoes.grid(row=1, column=0, padx=10, pady=10, sticky="nsew")
-        self.janela_principal.grid_rowconfigure(1, weight=1)
-        self.janela_principal.grid_columnconfigure(0, weight=1)
+        self.master.grid_rowconfigure(1, weight=1)
+        self.master.grid_columnconfigure(0, weight=1)
         self.img_filtro    = self.load_image("img/filtro.png", (94, 94))
         self.img_text_plan = self.load_image("img/text_plan.png", (94, 94))
         self.img_sex       = self.load_image("img/sex.png", (94, 94))
         self.img_estat     = self.load_image("img/estat.png", (94, 94))
         botoes = [
             ("Filtrar texto",
-             lambda: filtrar_texto(self.janela_principal),
+             lambda: filtrar_texto(self.master),
              PRIMARY,
              self.img_filtro,
              "Abre um arquivo TXT e filtra o texto deixando apenas verbos, adjetivos e substantivos."),
             ("Converter texto em tabela",
-             lambda: converter_texto_tabela(self.janela_principal),
+             lambda: converter_texto_tabela(self.master),
              SUCCESS,
              self.img_text_plan,
              "Converte o texto filtrado em pares (bigramas) e salva como CSV."),
             ("Identificador de Sexo",
-             lambda: identificador_sexo(self.janela_principal),
+             lambda: identificador_sexo(self.master),
              WARNING,
              self.img_sex,
              "Lê um arquivo CSV com nomes e identifica o gênero a partir do primeiro nome."),
             ("Estatísticas de texto",
-             lambda: estatisticas_texto(self.janela_principal),
+             lambda: estatisticas_texto(self.master),
              INFO,
              self.img_estat,
              "Realiza análise estatística do texto e gera métricas salvando os resultados em CSV.")
@@ -154,39 +154,6 @@ class SATA_GUI:
             row = i // 2
             col = i % 2
             botao = ttk.Button(frame_botoes,
-                               text=texto,
-                               command=cmd,
-                               bootstyle=bootstyle,
-                               image=image,
-                               compound="top")
-            botao.grid(row=row, column=col, padx=5, pady=5, sticky="nsew")
-            CreateToolTip(botao, text=tip)
-        frame_botoes.grid_columnconfigure(0, weight=1)
-        frame_botoes.grid_columnconfigure(1, weight=1)
-
-        # --- FRAME DOS BOTÕES INFORMATIVOS ---
-        # Alinha este frame na parte inferior direita da janela principal
-        frame_info = ttk.Frame(self.janela_principal, padding=10)
-        frame_info.grid(row=2, column=0, padx=10, pady=10, sticky="se")
-        # Botões informativos com estilo mais discreto
-        botao_sobre = ttk.Button(frame_info,
-                                 text="Sobre",
-                                 command=lambda: show_sobre(self.janela_principal),
-                                 bootstyle=SECONDARY)
-        botao_sobre.grid(row=0, column=0, padx=5)
-        CreateToolTip(botao_sobre, text="Exibe informações sobre o software e a licença GPL.")
-        botao_funcoes = ttk.Button(frame_info,
-                                   text="Funções do softwares",
-                                   command=lambda: show_funcoes(self.janela_principal),
-                                   bootstyle=SECONDARY)
-        botao_funcoes.grid(row=0, column=1, padx=5)
-        CreateToolTip(botao_funcoes, text="Exibe uma lista detalhada das funcionalidades do software.")
-        frame_info.grid_columnconfigure(0, weight=1)
-        frame_info.grid_columnconfigure(1, weight=1)
-
-    def run(self):
-        self.janela_principal.mainloop()
-
-if __name__ == "__main__":
-    app = SATA_GUI()
-    app.run()
+                               text
+::contentReference[oaicite:0]{index=0}
+ 
