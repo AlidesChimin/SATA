@@ -1,4 +1,4 @@
-# main.py (exemplo corrigido)
+# main.py
 from gui import SATA_GUI
 
 def carregar_texto(caminho):
