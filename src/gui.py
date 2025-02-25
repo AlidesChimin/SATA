@@ -2,6 +2,8 @@
 import os
 import ttkbootstrap as ttk
 from ttkbootstrap.constants import *
+
+# Imports dos módulos de processamento e janelas auxiliares
 from processamento.filtro_texto import filtrar_texto
 from processamento.converter_tabela import converter_texto_tabela
 from processamento.identificador_sexo import identificador_sexo
@@ -69,6 +71,7 @@ class CreateToolTip:
 
 class SATA_GUI:
     def __init__(self, master=None):
+        # Se não for passado um master, cria uma janela ttkbootstrap
         self.master = master or ttk.Window(themename="darkly")
         self.master.title("Sistema de Análise de Textos Acadêmico - SATA")
         self.master.geometry("600x700")
@@ -96,22 +99,34 @@ class SATA_GUI:
         # --- FRAME DE INTRODUÇÃO ---
         frame_intro = ttk.Frame(self.master, padding=10)
         frame_intro.grid(row=0, column=0, padx=10, pady=10, sticky="ew")
+        
         # Título centralizado
-        titulo = ttk.Label(frame_intro,
-                           text="SATA - Sistema de Análise de Textos Acadêmicos",
-                           font=("Helvetica", 16, "bold"),
-                           anchor="center")
+        titulo = ttk.Label(
+            frame_intro,
+            text="SATA - Sistema de Análise de Textos Acadêmicos",
+            font=("Helvetica", 16, "bold"),
+            anchor="center"
+        )
         titulo.pack(fill="x", pady=(0, 5))
+        
         # Frame para o texto explicativo e a logo lado a lado
         frame_explanation = ttk.Frame(frame_intro)
         frame_explanation.pack(fill="x")
-        explicacao = ("SATA é uma ferramenta desenvolvida para auxiliar pesquisadores, professores "
-                      "e estudantes na análise de conteúdo (entrevistas, notícias, etc.). Ele utiliza "
-                      "técnicas avançadas de processamento de linguagem natural para identificar padrões "
-                      "linguísticos, analisar a estrutura textual, verificar a coerência argumentativa e destacar "
-                      "elementos relevantes como citações e referências.")
-        label_explicacao = ttk.Label(frame_explanation, text=explicacao, wraplength=400, justify="left")
+        explicacao = (
+            "SATA é uma ferramenta desenvolvida para auxiliar pesquisadores, professores "
+            "e estudantes na análise de conteúdo (entrevistas, notícias, etc.). Ele utiliza "
+            "técnicas avançadas de processamento de linguagem natural para identificar padrões "
+            "linguísticos, analisar a estrutura textual, verificar a coerência argumentativa e destacar "
+            "elementos relevantes como citações e referências."
+        )
+        label_explicacao = ttk.Label(
+            frame_explanation,
+            text=explicacao,
+            wraplength=400,
+            justify="left"
+        )
         label_explicacao.pack(side="left", fill="both", expand=True)
+        
         # Carrega a logo do software
         logo_img = self.load_image("img/logo.png", (130, 130))
         if logo_img:
@@ -124,35 +139,94 @@ class SATA_GUI:
         frame_botoes.grid(row=1, column=0, padx=10, pady=10, sticky="nsew")
         self.master.grid_rowconfigure(1, weight=1)
         self.master.grid_columnconfigure(0, weight=1)
+        
+        # Carrega imagens para os botões
         self.img_filtro    = self.load_image("img/filtro.png", (94, 94))
         self.img_text_plan = self.load_image("img/text_plan.png", (94, 94))
         self.img_sex       = self.load_image("img/sex.png", (94, 94))
         self.img_estat     = self.load_image("img/estat.png", (94, 94))
+        
+        # Lista de botões (texto, função, estilo, imagem, tooltip)
         botoes = [
-            ("Filtrar texto",
-             lambda: filtrar_texto(self.master),
-             PRIMARY,
-             self.img_filtro,
-             "Abre um arquivo TXT e filtra o texto deixando apenas verbos, adjetivos e substantivos."),
-            ("Converter texto em tabela",
-             lambda: converter_texto_tabela(self.master),
-             SUCCESS,
-             self.img_text_plan,
-             "Converte o texto filtrado em pares (bigramas) e salva como CSV."),
-            ("Identificador de Sexo",
-             lambda: identificador_sexo(self.master),
-             WARNING,
-             self.img_sex,
-             "Lê um arquivo CSV com nomes e identifica o gênero a partir do primeiro nome."),
-            ("Estatísticas de texto",
-             lambda: estatisticas_texto(self.master),
-             INFO,
-             self.img_estat,
-             "Realiza análise estatística do texto e gera métricas salvando os resultados em CSV.")
+            (
+                "Filtrar texto",
+                lambda: filtrar_texto(self.master),
+                PRIMARY,
+                self.img_filtro,
+                "Abre um arquivo TXT e filtra o texto deixando apenas verbos, adjetivos e substantivos."
+            ),
+            (
+                "Converter texto em tabela",
+                lambda: converter_texto_tabela(self.master),
+                SUCCESS,
+                self.img_text_plan,
+                "Converte o texto filtrado em pares (bigramas) e salva como CSV."
+            ),
+            (
+                "Identificador de Sexo",
+                lambda: identificador_sexo(self.master),
+                WARNING,
+                self.img_sex,
+                "Lê um arquivo CSV com nomes e identifica o gênero a partir do primeiro nome."
+            ),
+            (
+                "Estatísticas de texto",
+                lambda: estatisticas_texto(self.master),
+                INFO,
+                self.img_estat,
+                "Realiza análise estatística do texto e gera métricas salvando os resultados em CSV."
+            )
         ]
+        
+        # Criação dos botões dinamicamente
         for i, (texto, cmd, bootstyle, image, tip) in enumerate(botoes):
             row = i // 2
             col = i % 2
-            botao = ttk.Button(frame_botoes,
-                               text)
-::contentReference[oaicite:0]{index=0}
+            botao = ttk.Button(
+                frame_botoes,
+                text=texto,
+                command=cmd,
+                bootstyle=bootstyle,
+                image=image,
+                compound="top"
+            )
+            botao.grid(row=row, column=col, padx=5, pady=5, sticky="nsew")
+            CreateToolTip(botao, text=tip)
+        
+        frame_botoes.grid_columnconfigure(0, weight=1)
+        frame_botoes.grid_columnconfigure(1, weight=1)
+
+        # --- FRAME DOS BOTÕES INFORMATIVOS ---
+        frame_info = ttk.Frame(self.master, padding=10)
+        frame_info.grid(row=2, column=0, padx=10, pady=10, sticky="se")
+
+        # Botão "Sobre"
+        botao_sobre = ttk.Button(
+            frame_info,
+            text="Sobre",
+            command=lambda: show_sobre(self.master),
+            bootstyle=SECONDARY
+        )
+        botao_sobre.grid(row=0, column=0, padx=5)
+        CreateToolTip(botao_sobre, text="Exibe informações sobre o software e a licença GPL.")
+        
+        # Botão "Funções do software"
+        botao_funcoes = ttk.Button(
+            frame_info,
+            text="Funções do software",
+            command=lambda: show_funcoes(self.master),
+            bootstyle=SECONDARY
+        )
+        botao_funcoes.grid(row=0, column=1, padx=5)
+        CreateToolTip(botao_funcoes, text="Exibe uma lista detalhada das funcionalidades do software.")
+        
+        frame_info.grid_columnconfigure(0, weight=1)
+        frame_info.grid_columnconfigure(1, weight=1)
+
+    def run(self):
+        self.master.mainloop()
+
+# Se quiser executar diretamente este arquivo:
+if __name__ == "__main__":
+    app = SATA_GUI()
+    app.run()
