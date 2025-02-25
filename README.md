@@ -10,11 +10,11 @@ O **SATA** - Sistema de Análise de Textos Acadêmicos é uma ferramenta desenvo
 
 ## Instalação
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ## Uso
 ```bash
-python src/main.py
+python3 src/main.py
 ```
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14868064.svg)](https://zenodo.org/records/14868064)
