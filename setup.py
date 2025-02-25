@@ -15,7 +15,9 @@ setup(
         'gender-guesser',
         'Pillow',
         'wordcloud',
-        'textblob'
+        'textblob',
+        # Adicionando o modelo spaCy:
+        'pt_core_news_sm @ https://github.com/explosion/spacy-models/releases/download/pt_core_news_sm-3.8.0/pt_core_news_sm-3.8.0-py3-none-any.whl'
     ],
     entry_points={
         'console_scripts': [
