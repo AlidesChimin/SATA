@@ -1,25 +1,23 @@
 ---
-
 title: "ATAS - Academic Text Analysis System"
 tags:
-
-- NLP
-- Content Analysis
-- Humanities
-- Text Analysis
-- Geography
-- Python
-  authors:
-- name: "Alides Baptista Chimin Junior"
-  orcid: "0000-0002-7436-390X"
-  affiliation: "1"
-  affiliations:
-- name: "Universidade Estadual do Centro-Oeste (UNICENTRO)"
-  index: 1
-  date: 18 February 2025
-  bibliography: paper.bib
-
+  - NLP
+  - Análise de Conteúdo
+  - Ciências Humanas
+  - Análise de Texto
+  - Geografia
+  - Python
+authors:
+  - name: "Alides Baptista Chimin Junior"
+    orcid: "0000-0002-7436-390X"
+    affiliation: "1"
+affiliations:
+  - name: "Universidade Estadual do Centro-Oeste (UNICENTRO)"
+    index: 1
+date: 18 February 2025
+bibliography: paper.bib
 ---
+
 
 # Abstract
 
