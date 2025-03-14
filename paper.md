@@ -1,12 +1,12 @@
 ---
 title: "ATAS - Academic Text Analysis System"
 tags:
-  - NLP
-  - Análise de Conteúdo
-  - Ciências Humanas
-  - Análise de Texto
-  - Geografia
-  - Python
+- NLP
+- Content Analysis
+- Humanities
+- Text Analysis
+- Geography
+- Python
 authors:
   - name: "Alides Baptista Chimin Junior"
     orcid: "0000-0002-7436-390X"
