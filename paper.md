@@ -27,17 +27,19 @@ The software is particularly useful for researchers in the **Humanities and Soci
 
 We emphasize that the tools are in Portuguese, as they were developed by a Brazilian researcher and are being used by the GEPES and GETE research groups.
 
+
 # Statement of Need
 
-Academic text analysis is a **time-consuming and subjective** process, especially in qualitative research. ATAS automates part of this process, allowing researchers to:
+In the Brazilian Humanities and Social Sciences research context, many scholars still rely on manual or semi-manual methods to process and analyze large textual corpora. According to **Metzler et al. [@Metzler:2016]**, barriers such as limited programming skills, lack of access to adequate infrastructure, and scarce training opportunities hinder the adoption of computational approaches in these fields. As a result, essential tasks like identifying thematic patterns, generating bigram networks, classifying authors by gender, and calculating lexical statistics often become labor-intensive and error-prone.
 
-- **Filter relevant terms** from large volumes of text.
-- **Generate bigram tables** for semantic network analysis.
-- **Classify the gender** of authors in textual datasets.
-- **Perform textual statistics**, such as lexical diversity and sentiment analysis.
+The **ATAS – Academic Text Analysis System** addresses these issues by providing an open-source, graphical-interface-based solution that automates these processes without requiring advanced technical expertise. By integrating Natural Language Processing (NLP) capabilities in Brazilian Portuguese, ATAS bridges the gap between sophisticated analytical methods and their practical usability for non-technical researchers. This directly supports more equitable access to computational tools in contexts where language and resource limitations frequently exclude researchers from digital scholarship.
 
-According to **Metzler et al. [@metzler2016]**, many social science researchers face barriers to adopting computational tools in their research workflows, including limited programming skills, lack of infrastructure, and restricted access to training. ATAS directly addresses these challenges by providing a user-friendly graphical interface and automating complex analytical procedures. The tool is particularly relevant for researchers in Brazil and other regions where the demand for accessible, open-source solutions in the Humanities and Social Sciences is growing.
-The intersection between discourse and spatiality can be analyzed through spatial statistics and semantic networks without necessarily relying on Geographic Information Systems (GIS). **Gilberto Câmara [@Camara:2017]** critiques the limitations of GIS by arguing that its computational structure reduces complex geographic processes to discrete representations, oversimplifying spatial dynamics and ignoring the dialectics of geographic phenomena. ATAS emerges as a methodological alternative that enables the representation of discursive spatialities without the need for traditional cartography.
+Beyond facilitating traditional content analysis, ATAS expands methodological possibilities for examining the relationship between discourse and spatiality. While **Geographic Information Systems (GIS)** are powerful tools for spatial analysis and thematic cartography, their architecture — based on discrete vector and raster data structures — tends to produce static “snapshots” of space. This structural limitation often prevents them from representing the inherently dynamic, processual, and socially constructed nature of geographic phenomena.
+
+As highlighted by **David Harvey [2005; 1980]** and **Milton Santos [1996; 1978]**, geography extends far beyond cartographic representation. Space is not merely a neutral container of events, but a social, political, and economic construct permeated by power relations, symbolic appropriation, and subjective experiences — dimensions that resist reduction to numerical variables in a GIS database.
+
+**Gilberto Câmara [@Camara:2017a]** critiques this limitation by noting that GIS computational structures often oversimplify spatial dynamics and overlook the dialectics of geographic phenomena. ATAS offers a methodological alternative by enabling the extraction and analysis of “discursive spatialities” — the ways in which space is constructed, contested, and redefined through language — using spatial statistics and semantic networks directly from textual data. In doing so, it complements rather than replaces cartography, offering researchers in the Humanities and Social Sciences a way to capture spatial meaning that is processual, contextual, and deeply embedded in discourse.
+
 
 # Features and Usage
 
