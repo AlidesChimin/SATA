@@ -1,6 +1,7 @@
 # SATA - Sistema de Análise de Textos Acadêmicos
 
 O **SATA** - Sistema de Análise de Textos Acadêmicos é uma ferramenta desenvolvida para auxiliar pesquisadores, professores e estudantes na análise de conteúdo (entrevistas, notícias, etc.). Ele utiliza técnicas avançadas de processamento de linguagem natural para identificar padrões linguísticos, analisar a estrutura textual, verificar a coerência argumentativa e destacar elementos relevantes como citações e referências.
+Veja CONTRIBUTING.md para contribuir.
 
 ## Funcionalidades
 - Análise Estrutural: Identificação da organização de parágrafos, seções e estrutura geral do texto.
@@ -19,4 +20,5 @@ python3 src/main.py
 ```
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14868064.svg)](https://zenodo.org/records/14868064)
 
-Veja CONTRIBUTING.md para contribuir
+
+![Tests](https://github.com/AlidesChimin/SATA/actions/workflows/tests.yml/badge.svg)
