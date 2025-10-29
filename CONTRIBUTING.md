@@ -1,11 +1,15 @@
-# Contributing to ATAS - Academic Text Analysis System
+# Contributing to SATA / ATAS
 
-Thank you for your interest in contributing to the ATAS project!
+Thanks for your interest in contributing!
 
-## How to Contribute
-
-1. Fork the repository and create your branch from `main`.
-2. Make your changes and ensure the application runs locally.
+## How to contribute
+1. Fork the repo and create a branch from `main`.
+2. Make your changes (please add tests when applicable).
+3. Run the test suite locally:  
+   ```bash
+   pip install -r requirements.txt
+   pip install -U pytest
+   pytest
 3. Commit your changes with clear messages.
 4. Open a Pull Request with a detailed description.
 
