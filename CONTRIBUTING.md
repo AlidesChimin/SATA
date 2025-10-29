@@ -2,29 +2,37 @@
 
 Thanks for your interest in contributing!
 
-## How to contribute
-1. Fork the repo and create a branch from `main`.
-2. Make your changes (please add tests when applicable).
-3. Run the test suite locally:  
-   ```bash
-   pip install -r requirements.txt
-   pip install -U pytest
-   pytest
-3. Commit your changes with clear messages.
-4. Open a Pull Request with a detailed description.
-
-## Code Style
-
-Please follow standard PEP8 style for Python code.
-
-## Reporting Issues
-
-If you find a bug or have a suggestion, please open an issue using the GitHub issue tracker.
-
-## Feature Suggestions
-
-Feature requests are welcome! Feel free to discuss them through issues before starting implementation.
+This project welcomes code, documentation, tests, and issue reports. By
+participating, you agree to keep a respectful, collaborative environment.
 
 ---
 
-ATAS is an academic open-source project maintained by Alides Chimin. Let's work together to make it even better!
+## Ways to contribute
+
+- Fix bugs or improve code quality
+- Add tests (unit or integration)
+- Improve docs / README / examples
+- Propose or implement new features
+- Report issues with a minimal reproducible example
+
+---
+
+## Getting started (local dev)
+
+```bash
+# 1) Clone your fork
+git clone https://github.com/<your-user>/SATA.git
+cd SATA
+
+# 2) (Optional but recommended) create a virtualenv
+python -m venv .venv
+# Linux/macOS:
+source .venv/bin/activate
+# Windows (PowerShell):
+# .venv\Scripts\Activate.ps1
+
+# 3) Install dependencies
+pip install -r requirements.txt
+
+# 4) Install test tooling (dev)
+pip install -U pytest
