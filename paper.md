@@ -109,9 +109,10 @@ Users and contributors can:
 
 # Scholarly Effort
 
-ATAS represents more than twelve months of continuous development.  
-The project includes over **3,200 lines of Python code**, **50+ commits**, and **integration of five core libraries** (`spaCy`, `pandas`, `tkinter`, `ttkbootstrap`, `gender_guesser`).  
-It originated as part of research activities conducted at the **GEPES** and **GETE** research groups, supporting ongoing Master's and PhD dissertations in Human Geography.
+ATAS comprises approximately **910 total lines of source code**, of which **655 are Python logic**, distributed across eight modules.  
+The system includes **38 functions** and **6 classes**, integrating major open-source libraries (`spaCy`, `pandas`, `tkinter`, `ttkbootstrap`, `gender_guesser`, and `PIL`).  
+It was developed by **Dr. Alides Baptista Chimin Junior** as part of ongoing research in the **GEPES** and **GETE** groups, within the field of **Human Geography**.  
+The project reflects over a year of design, implementation, and integration efforts, bridging computational linguistics and content analysis for the Humanities.
 
 # Implementation
 
