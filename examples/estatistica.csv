@@ -1,0 +1,16 @@
+Categoria,Valor
+Verbos,7298
+Adjetivos,5502
+Substantivos (NOUN),9162
+Advérbios (ADV),251
+Homens (PER),6
+Mulheres (PER),5
+LOC (Locais),332
+ORG (Organizações),60
+Número de sentenças,1630
+Comprimento médio das sentenças (tokens),14.338650306748466
+Stopwords,2711
+Total de tokens,23372
+Diversidade Lexical (TTR),0.18060071880883108
+Polaridade (Sentimento) [geral],0.030716004813477724
+Subjetividade (Sentimento) [geral],0.6663056558363419
