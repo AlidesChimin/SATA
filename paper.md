@@ -26,7 +26,7 @@ The toolset is localized for **Brazilian Portuguese** and is actively used by th
 
 # Statement of Need
 
-In Brazil’s Humanities and Social Sciences (Geography), many scholars still rely on manual or semi-manual workflows to process large textual corpora. Historical barriers—limited programming experience, scarce infrastructure, and uneven training—have hindered the adoption of computational methods [@Metzler:2016]. At the same time, **Large Language Models (LLMs)** have transformed NLP in recent years, opening powerful possibilities but also raising concerns about **language coverage, transparency, and reproducibility** [@Scao:2022; @OpenAI:2023]. For **Portuguese (Brazil)** specifically, the ecosystem has improved with **encoder models** such as **BERTimbau** [@Souza:2020], yet accessible, GUI-driven tools that operationalize these advances for **non-specialists** remain scarce.
+In Brazil’s Humanities and Social Sciences (Geography), many scholars still rely on manual or semi-manual workflows to process large textual corpora. Historical barriers—limited programming experience, scarce infrastructure, and uneven training—have hindered the adoption of computational methods [@Metzler:2016]. At the same time, **Large Language Models (LLMs)** have transformed NLP in recent years, opening powerful possibilities but also raising concerns about **language coverage, transparency, and reproducibility** [@Scao:2022; @OpenAI:2023]. For **Portuguese (Brazil)** specifically, the ecosystem has improved with **encoder models** such as **BERTimbau** [@Souza:2020] and more recent **PT-BR Encoders** [@Mello:2024], yet accessible, GUI-driven tools that operationalize these advances for **non-specialists** remain scarce.
 
 **ATAS** addresses this gap as an **open-source, GUI-based** system that automates key tasks—keyword filtering, bigram networks, lexical metrics—**without requiring advanced coding**. Localization to **Brazilian Portuguese** promotes equitable access to computational analysis and supports reproducible research pipelines for Human Geography and allied fields.
 
@@ -38,7 +38,7 @@ Beyond facilitating content analysis, ATAS helps investigate how **discourse con
 
 Extracts verbs, adjectives, and nouns from texts, facilitating qualitative analyses.
 
-- **Library used:** `spaCy`
+- **Library used:** `spaCy` [@spaCy:2023]
 - **How to use:**
   1. Open ATAS and go to the *Filter Text* option.
   2. Select the `.txt` file to be analyzed.
@@ -48,7 +48,7 @@ Extracts verbs, adjectives, and nouns from texts, facilitating qualitative analy
 
 Generates bigrams from the text and exports the data in CSV format, useful for analysis in Gephi.
 
-- **Library used:** `pandas`
+- **Library used:** `pandas` [@Pandas:2023]
 - **How to use:**
   1. Access the *Convert Text to Table* option.
   2. Choose a `.txt` file.
@@ -58,7 +58,7 @@ Generates bigrams from the text and exports the data in CSV format, useful for a
 
 Automatically classifies the gender of proper names found in a textual dataset.
 
-- **Library used:** `gender_guesser`
+- **Library used:** `gender_guesser` [@GenderGuesser:2016]
 - **How to use:**
   1. Select the *Identify Gender* option.
   2. Upload a CSV file containing a list of names.
@@ -74,7 +74,7 @@ Provides quantitative metrics such as **word frequency, named entities, and lexi
   2. Select a text file.
   3. The system presents a detailed statistical report, including **word clouds and graphs**.
 
-*Note:* Sentiment analysis will be integrated in future releases with **Portuguese-specific models** (e.g., Stanza, NLPNet, UDPipe) and, where appropriate, **open LLMs** fine-tuned for PT-BR to support tasks such as summarization—while preserving ATAS’s principles of **openness, transparency, and independence from proprietary APIs** [@Scao:2022; @OpenAI:2023].
+*Note:* Sentiment analysis will be integrated in future releases with **Portuguese-specific models** (e.g., Stanza, NLPNet, UDPipe) and, where appropriate, **open LLMs** fine-tuned for PT-BR [@Touvron:2023], while preserving ATAS’s principles of **openness, transparency, and independence from proprietary APIs** [@Scao:2022; @OpenAI:2023].
 
 ## 5. Graphical Interface
 
@@ -97,7 +97,8 @@ The software was tested under **Python 3.8+** on **Linux and Windows** environme
 
 All examples in the paper can be reproduced using the sample datasets available in the `/examples` directory.  
 Each function (e.g., text filtering, bigram extraction, gender identification) can be validated independently.  
-Although ATAS does not yet include automated tests, validation scripts are provided to verify core functionality and output consistency.
+Automated tests are implemented through continuous integration on **GitHub Actions**, confirming successful imports, dependencies, and environment reproducibility.  
+![Tests](https://github.com/AlidesChimin/SATA/actions/workflows/tests.yml/badge.svg)
 
 # Community Guidelines
 
