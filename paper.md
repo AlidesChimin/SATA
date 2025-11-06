@@ -30,7 +30,7 @@ In Brazil’s Humanities and Social Sciences (Geography), many scholars still re
 
 **ATAS** addresses this gap as an **open-source, GUI-based** system that automates key tasks—keyword filtering, bigram networks, lexical metrics—**without requiring advanced coding**. Localization to **Brazilian Portuguese** promotes equitable access to computational analysis and supports reproducible research pipelines for Human Geography and allied fields.
 
-Beyond facilitating content analysis, ATAS helps investigate how **discourse constitutes space**. In Human Geography, **space** is socially produced and relational rather than a neutral container [@Harvey:1980; @Massey:2005]. While GIS excels at mapping and spatial querying, its discrete data structures can under-represent **processual and discursive spatialities**. ATAS complements cartography by extracting **semantic networks and entities** directly from text, enabling researchers to track how places, actors, and relations are constructed, contested, and reconfigured in academic and policy discourse.
+Beyond facilitating content analysis, ATAS helps investigate how **discourse constitutes space**. In Human Geography, **space** is socially produced and relational rather than a neutral container [@Lefebvre:1991; @Massey:2005]. While GIS excels at mapping and spatial querying, its discrete data structures can under-represent **processual and discursive spatialities**. ATAS complements cartography by extracting **semantic networks and entities** directly from text, enabling researchers to track how places, actors, and relations are constructed, contested, and reconfigured in academic and policy discourse.
 
 # Features and Usage
 
