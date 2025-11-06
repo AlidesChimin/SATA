@@ -52,7 +52,12 @@ class CreateToolTip:
             self.widget.after_cancel(id_)
 
     def showtip(self, event=None):
-        x, y, cx, cy = self.widget.bbox("insert")
+        try:
+            x, y, cx, cy = self.widget.bbox("insert")
+        except Exception:
+            # Some widgets (e.g. buttons) may not support the "insert" index
+            # so we fall back to 0 values to avoid a TclError
+            x = y = cx = cy = 0
         x = x + self.widget.winfo_rootx() + 25
         y = y + cy + self.widget.winfo_rooty() + 25
         self.tipwindow = tw = tk.Toplevel(self.widget)
