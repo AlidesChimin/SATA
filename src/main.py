@@ -1,5 +1,5 @@
 # main.py
-from gui import SATA_GUI
+from .gui import SATA_GUI
 
 def carregar_texto(caminho):
     # Lógica para carregar texto

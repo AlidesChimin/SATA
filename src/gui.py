@@ -4,12 +4,12 @@ import ttkbootstrap as ttk
 from ttkbootstrap.constants import *
 
 # Imports dos módulos de processamento e janelas auxiliares
-from processamento.filtro_texto import filtrar_texto
-from processamento.converter_tabela import converter_texto_tabela
-from processamento.identificador_sexo import identificador_sexo
-from processamento.estatisticas_texto import estatisticas_texto
-from informacoes.sobre import show_sobre
-from informacoes.funcoes import show_funcoes
+from .processamento.filtro_texto import filtrar_texto
+from .processamento.converter_tabela import converter_texto_tabela
+from .processamento.identificador_sexo import identificador_sexo
+from .processamento.estatisticas_texto import estatisticas_texto
+from .informacoes.sobre import show_sobre
+from .informacoes.funcoes import show_funcoes
 
 import tkinter as tk
 from tkinter import font
