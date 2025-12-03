@@ -1,0 +1,330 @@
+Source,Target
+Ausentes,Plenário
+Plenário,Deputado
+Deputado,Deputado
+Deputado,Públicas
+Fazenda,União
+União,Debate
+Debate,Estado
+Estado,Federativa
+Federativa,Imparcial
+Imparcial,Câmara
+Câmara,impitma
+impitma,Ausentes
+Ausentes,Encruzilhada
+Encruzilhada,Ministro
+Ministro,Progressista
+Progressista,República
+República,República
+República,República
+República,Império
+Império,Federais
+Federais,União
+União,Amazonas
+Amazonas,Editorial
+Editorial,rouba
+rouba,Central
+Central,Obrigado
+Obrigado,Povo
+Povo,Nordeste
+Nordeste,Parlamento
+Parlamento,Trabalhador
+Trabalhador,Trabalhador
+Trabalhador,Cantar
+Cantar,Estado
+Estado,Deputado
+Deputado,República
+República,Nordeste
+Nordeste,Nacional
+Nacional,Federais
+Federais,Érica
+Érica,Nacional
+Nacional,Roraima
+Roraima,República
+República,País
+País,esperanç
+esperanç,Maranhão
+Maranhão,República
+República,Câmara
+Câmara,Parlamento
+Parlamento,Continuará
+Continuará,País
+País,Jundiaí
+Jundiaí,Fortaleza
+Fortaleza,República
+República,vocês
+vocês,Deputado
+Deputado,Encruzilhada
+Encruzilhada,República
+República,Câmara
+Câmara,Ausentes
+Ausentes,estado
+estado,Roraima
+Roraima,Roraima
+Roraima,Total
+Total,Total Jonathas
+Total Jonathas,Total
+Total,Total
+Total,Total
+Total,Total
+Total,Total
+Total,Total
+Total,Total
+Total,Total buzato
+Total buzato,Total
+Total,Total
+Total,Total
+Total,Feliz
+Feliz,Total
+Total,Total
+Total,Total
+Total,Total
+Total,Total
+Total,Total
+Total,Total
+Total,Total
+Total,Total
+Total,Total
+Total,Total
+Total,Total
+Total,Faro
+Faro,Pará
+Pará,Estado
+Estado,Total
+Total,Total
+Total,Total
+Total,Total
+Total,Estado
+Estado,Total
+Total,Amado
+Amado,Pará
+Pará,Total
+Total,Total
+Total,Total
+Total,Total
+Total,Total
+Total,Constituição
+Constituição,C
+C,Estado
+Estado,Total
+Total,Total
+Total,Total
+Total,Total
+Total,Total
+Total,Gerais
+Gerais,Total
+Total,Total
+Total,Aplausos
+Aplausos,Total
+Total,Amazonas
+Amazonas,Total
+Total,Total
+Total,Estado
+Estado,Amazonas
+Amazonas,Amazonas
+Amazonas,Amazonas
+Amazonas,Total
+Total,Estado
+Estado,Amazonas
+Amazonas,Total
+Total,Amazonas
+Amazonas,Deputado
+Deputado,Amazonas
+Amazonas,Amazonas
+Amazonas,Total
+Total,Total
+Total,Total
+Total,Total
+Total,Estado
+Estado,Total
+Total,Total
+Total,Estado
+Estado,Parlamento
+Parlamento,Total
+Total,Estado
+Estado,Total
+Total,Estado
+Estado,Total
+Total,Total
+Total,Total
+Total,República
+República,Total
+Total,Total prz senhor presidente medo
+Total prz senhor presidente medo,Deputado
+Deputado,Total
+Total,Total
+Total,Deputado
+Deputado,Total
+Total,Total
+Total,Total
+Total,Total
+Total,Presidente
+Presidente,Estado
+Estado,Total
+Total,Total
+Total,Estado
+Estado,Mandato
+Mandato,Total
+Total,Total
+Total,Sao
+Sao,Total
+Total,Total
+Total,Total
+Total,República
+República,Total
+Total,Estado
+Estado,Total
+Total,Total
+Total,Estado
+Estado,Total
+Total,Oeste
+Oeste,Progresso
+Progresso,Estado
+Estado,Total
+Total,Total
+Total,Total
+Total,Total
+Total,Estado
+Estado,Total
+Total,Deputado Olímpio
+Deputado Olímpio,Santista
+Santista,Deputado
+Deputado,Estado
+Estado,Total
+Total,Estado
+Estado,Total
+Total,Total
+Total,Consultei
+Consultei,Parlamento
+Parlamento,Total
+Total,Total
+Total,Povo
+Povo,Total
+Total,Total
+Total,Estado
+Estado,Total
+Total,Deputado
+Deputado,Pregando
+Pregando,Estado
+Estado,Ceará
+Ceará,Carrego
+Carrego,Total
+Total,Maranhão
+Maranhão,Maranhão
+Maranhão,Total
+Total,Governador
+Governador,Governador
+Governador,Governador
+Governador,Deputado filho
+Deputado filho,Deputado
+Deputado,Ceará
+Ceará,Governador
+Governador,Deputado
+Deputado,Federais
+Federais,Deputado
+Deputado,Deputado
+Deputado,Total
+Total,Fortaleza
+Fortaleza,Deputado
+Deputado,Vejam
+Vejam,Deputado
+Deputado,Estado
+Estado,Estado
+Estado,Deputado
+Deputado,Refinaria
+Refinaria,Fortaleza
+Fortaleza,Estado
+Estado,Estado
+Estado,Estado
+Estado,Total
+Total,Estado
+Estado,Estado
+Estado,Duque
+Duque,Justiça
+Justiça,Janeiro
+Janeiro,Câmara
+Câmara,Estado
+Estado,Deputado
+Deputado,Deputado
+Deputado,Novo
+Novo,Estado
+Estado,Estado
+Estado,aquio
+aquio,Jandira
+Jandira,Terra
+Terra,Estado
+Estado,Estado
+Estado,campo grande moro vendedores
+campo grande moro vendedores,Voltaremos
+Voltaremos,Estado
+Estado,Presidente voto
+Presidente voto,Janeiro
+Janeiro,Estado
+Estado,cidade velha senhor presidente voto impit
+cidade velha senhor presidente voto impit,União
+União,Pregando
+Pregando,Presidente Estado
+Presidente Estado,Alegre
+Alegre,Estado Espírito
+Estado Espírito,Deputado
+Deputado,Estado
+Estado,Deputado
+Deputado,Estado
+Estado,Estado
+Estado,Piauienses
+Piauienses,Potiguar
+Potiguar,Estado
+Estado,Norte
+Norte,República
+República,Presidente
+Presidente,Agricultor
+Agricultor,Deputado
+Deputado,Mineiro
+Mineiro,País
+País,Câmara
+Câmara,Deputado
+Deputado,Deputado lincol prb senhor presidente
+Deputado lincol prb senhor presidente,Deputado
+Deputado,Mineiro
+Mineiro,Boa
+Boa,Claros
+Claros,Trabalhadores
+Trabalhadores,Orgulho
+Orgulho,Estado
+Estado,Deputado
+Deputado,Lagoinhas
+Lagoinhas,prb senhor
+prb senhor,Estado
+Estado,Deputado
+Deputado,Deputado
+Deputado,Estado
+Estado,Deputado
+Deputado,país senhor presidente senhor presidente
+país senhor presidente senhor presidente,Deputado senhor presidente senhor presidente
+Deputado senhor presidente senhor presidente,Deputado
+Deputado,rombo presidente
+rombo presidente,Pernambuco
+Pernambuco,Fazem manifestações
+Fazem manifestações,Governador
+Governador,Gerais
+Gerais,Presidente
+Presidente,estádio coutin voto
+estádio coutin voto,Pernambucana
+Pernambucana,Deputado
+Deputado,Total
+Total,Deputado
+Deputado,Grandes
+Grandes,República
+República,Estado
+Estado,Parlamento
+Parlamento,Estado
+Estado,Estado
+Estado,Estado menor
+Estado menor,Valadares
+Valadares,Deputado azula Estado
+Deputado azula Estado,Estado
+Estado,Deputado
+Deputado,Estado
+Estado,Presidente Estado
+Presidente Estado,Vejam
+Vejam,Estado
