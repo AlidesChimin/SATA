@@ -5,7 +5,7 @@ pdfminer.six
 docx
 ttkbootstrap
 gender-guesser
-pillow
+Pillow
 wordcloud
 textblob
 spacy==3.8.4

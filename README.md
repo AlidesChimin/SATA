@@ -19,6 +19,3 @@ pip3 install -r requirements.txt
 python3 src/main.py
 ```
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14868064.svg)](https://zenodo.org/records/14868064)
-
-
-![Tests](https://github.com/AlidesChimin/SATA/actions/workflows/tests.yml/badge.svg)
