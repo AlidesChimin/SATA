@@ -130,6 +130,4 @@ While the current version relies primarily on `spaCy`, future developments will 
 
 I thank the project collaborators and the research groups GETE (UEPG) and GEPES (UNICENTRO), whose ongoing use cases and feedback have shaped ATAS’s development.
 
-🔗 Zenodo DOI: [10.5281/zenodo.14868064](https://doi.org/10.5281/zenodo.14868064)
-
 🔗 Figshare DOI: [10.6084/m9.figshare.30776753](https://doi.org/10.6084/m9.figshare.30776753)
