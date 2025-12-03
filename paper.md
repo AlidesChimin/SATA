@@ -95,25 +95,21 @@ The software was tested under Python 3.8+ on Linux and Windows environments.
 
 # Reproducibility and Testing
 
-All examples in the paper can be reproduced using the sample datasets available in the `/examples` directory.  
-Each function (e.g., text filtering, bigram extraction, gender identification) can be validated independently.  
-Automated tests are implemented through continuous integration on GitHub Actions, confirming successful imports, dependencies, and environment reproducibility.  
+All examples in the paper can be reproduced using the sample datasets available in the `/examples` directory. Each function (e.g., text filtering, bigram extraction, gender identification) can be validated independently. Automated tests are implemented through continuous integration on GitHub Actions, confirming successful imports, dependencies, and environment reproducibility.
+
 ![Tests](https://github.com/AlidesChimin/SATA/actions/workflows/tests.yml/badge.svg)
 
 # Community Guidelines
 
-The project follows open-source contribution standards.  
-Users and contributors can:
+The project follows open-source contribution standards. Users and contributors can:
+
 1. Open issues and pull requests on GitHub.
 2. Follow the guidelines described in the `CONTRIBUTING.md` file.
 3. Adhere to the `CODE_OF_CONDUCT.md` included in the repository.
 
 # Scholarly Effort
 
-ATAS comprises approximately 910 total lines of source code, of which 655 are Python logic, distributed across eight modules.  
-The system includes 38 functions and 6 classes, integrating major open-source libraries (`spaCy`, `pandas`, `tkinter`, `ttkbootstrap`, `gender_guesser`, and `PIL`).  
-It was developed by Dr. Alides Baptista Chimin Junior as part of ongoing research in the GEPES and GETE groups, within the field of Human Geography.  
-The project reflects over a year of design, implementation, and integration efforts, bridging computational linguistics and content analysis for the Humanities.
+ATAS comprises approximately **910 total lines of source code**, of which **655 are Python logic**, distributed across eight modules. The system includes **38 functions** and **6 classes**, integrating major open-source libraries (`spaCy`, `pandas`, `tkinter`, `ttkbootstrap`, `gender_guesser`, and `PIL`). It was developed by **Dr. Alides Baptista Chimin Junior** as part of ongoing research in the **GEPES** and **GETE** groups, within the field of **Human Geography**. The project reflects over a year of design, implementation, and integration efforts, bridging computational linguistics and content analysis for the Humanities.
 
 # Implementation
 
